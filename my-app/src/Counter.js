@@ -1,11 +1,13 @@
-import "./styles.css";
+// import "./styles.css";
+import React from 'react';
+import { useState } from 'react';
 
-function App() {
+function Counter() {
     const [count, setCount] = useState(0);
 
     return (
-        <div className="App">
-            <h1>Hello CodeSandbox</h1>
+        <div className="Counter">
+            <h1>Hello World</h1>
             <h2>You clicked {count} times!</h2>
 
             <button onClick={() => setCount(count - 1)}>Decrement</button>
@@ -14,5 +16,6 @@ function App() {
     );
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(<Counter />, rootElement);
+export default Counter;

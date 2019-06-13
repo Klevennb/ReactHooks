@@ -7,7 +7,6 @@ function Counter() {
 
     return (
         <div className="Counter">
-            <h1>Hello World</h1>
             <h2>You clicked {count} times!</h2>
 
             <button onClick={() => setCount(count - 1)}>Decrement</button>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import {Button} from 'antd';
 
 function Counter() {
     const [count, setCount] = useState(0);
@@ -8,8 +9,8 @@ function Counter() {
         <div className="Counter">
             <h2>You clicked {count} times!</h2>
 
-            <button onClick={() => setCount(count - 1)}>Decrement</button>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <Button onClick={() => setCount(count - 1)}>Decrement</Button>
+            <Button onClick={() => setCount(count + 1)}>Increment</Button>
         </div>
     );
 }

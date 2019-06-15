@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Counter from './Counter';
+import Weather from './Weather';
 import logo from './logo.svg';
 import './App.css';
 
@@ -30,14 +31,14 @@ function App() {
                 <Link to="/about/">About</Link>
               </li>
               <li>
-                <Link to="/users/">Users</Link>
+                <Link to="/counter/">Counter</Link>
               </li>
             </ul>
           </nav>
 
           <Route path="/" exact component={Index} />
           <Route path="/about/" component={About} />
-          <Route path="/users/" component={Counter} />
+          <Route path="/counter/" component={Counter} />
         </div>
       </Router>
     </div>

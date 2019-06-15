@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Card } from 'antd';
-function Weather() {
+function WeatherItem() {
     // const [count, setCount] = useState(0);
 
     return (
@@ -15,4 +15,4 @@ function Weather() {
     );
 }
 
-export default Weather;
+export default WeatherItem;

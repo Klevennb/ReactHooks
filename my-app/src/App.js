@@ -1,9 +1,10 @@
 import React from 'react';
 // import { Router, Route, Switch } from "react-router";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import 'antd/dist/antd.css';
 
 import Counter from './Counter';
-import Weather from './Weather';
+import Weather from './Weather/Weather';
 import logo from './logo.svg';
 import './App.css';
 
@@ -28,7 +29,7 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about/">About</Link>
+                <Link to="/weather/">Weather</Link>
               </li>
               <li>
                 <Link to="/counter/">Counter</Link>
@@ -37,7 +38,7 @@ function App() {
           </nav>
 
           <Route path="/" exact component={Index} />
-          <Route path="/about/" component={About} />
+          <Route path="/weather/" component={Weather} />
           <Route path="/counter/" component={Counter} />
         </div>
       </Router>

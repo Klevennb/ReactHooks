@@ -1,4 +1,3 @@
-// import "./styles.css";
 import React from 'react';
 import { useState } from 'react';
 
@@ -15,6 +14,4 @@ function Counter() {
     );
 }
 
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<Counter />, rootElement);
 export default Counter;
